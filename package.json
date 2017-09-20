@@ -1,0 +1,27 @@
+{
+  "name": "decor-elki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "bugs": {
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.4",
+    "ds-gulp-builder": "^0.2.2",
+    "ds-gulp-builder-browser-sync": "^0.2.2",
+    "ds-gulp-builder-browserify": "^0.2.5",
+    "ds-gulp-builder-jade": "^0.2.3",
+    "ds-gulp-builder-sass": "^0.2.3",
+    "gulp": "^3.9.1",
+    "gulp-include": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+extends _layout
+
+block vars
+
+  - var page = {title: 'Главная', url: '', type: 'home', class: 'home list', content: {},list: []};
+
+  - page.list.push({title: 'Ёлки', link: 'firs'})
+    - page.list.push({title: 'Элементы', link: 'element'})
+  - page.list.push({title: 'Среда', link: 'environment'})
+  - page.list.push({title: 'Контакты', link: 'contact'})
+
+
+block content
+  +front-page(page)
+
+

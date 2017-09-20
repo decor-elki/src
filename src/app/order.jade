@@ -1,0 +1,11 @@
+extends _layout
+
+block vars
+
+  - var txt = ''
+  - var label = 'Пожалуйста заполните свои контактные данные ниже, и наш представитель свяжется с Вами в ближайшее время'
+  - var page = {title: 'Заказать оформление', url: '', type: 'order', class: 'page order', content: {text: txt, lbl: label }};
+
+
+block content
+  +order-page(page)
