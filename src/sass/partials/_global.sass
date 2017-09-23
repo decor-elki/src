@@ -73,6 +73,7 @@ table.doc-list
       height: 10rem
 
 .list, .page
+  font-family: 'Helvetica Light', sans-serif
   h1, h2
     // font-family: 'PT Serif', serif
     color: $color-brown
@@ -84,15 +85,21 @@ table.doc-list
       +breakpoint(max-width $break-small)
         padding: 0
   h1
-    font-size: 2.2rem
+  ///  font-size: 2.2rem
   h2
-    font-size: 1.5rem
-
+    font-size: 25pt
+  h3
+    font-size: 15
+    text-align: center
 
   .teaser-section
-    margin-bottom: 3rem
+    margin-bottom: 1rem
     h2
-      font-size: 1.1rem
+      font-size: 24
+      font-family: 'Helvetica Light', sans-serif
+      text-align: left
+      margin-left: 20pt
+
 
 .list
   h1
@@ -165,53 +172,6 @@ table.doc-list
 //          height: 100%
 
 
-
-
-.bill-modal
-  position: fixed
-  z-index: 10000
-  background: white
-  top: 5rem
-  left: -100rem
-  &.show
-    left: 10rem
-  +span(7)
-  +card(5)
-  +breakpoint(max-width $break-small)
-    +span(12)
-    top: 0
-    &.show
-      left: 0
-  +transition(.5s ease-out)
-  h3
-    text-align: center
-  table
-    tbody
-      tr
-        &:nth-child(odd)
-          background-color: gainsboro
-        &:last-child
-          background: #ffffff
-          td
-            font-weight: bold
-    tr
-      td, th
-        padding: 1rem
-        font-weight: 100
-      th
-        font-weight: 600
-      td:nth-child(2), td:nth-child(3)
-        text-align: right
-  .close
-    position: absolute
-    top: 1rem
-    right: 1rem
-    cursor: pointer
-    opacity: 0.5
-    font-size: 1.2rem
-    font-weight: bold
-    &:hover
-      opacity: 1
 
 .contact
   text-align: center

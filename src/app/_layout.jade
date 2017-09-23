@@ -2,8 +2,8 @@ mixin nav(page)
   .nav-client
     case page.type
       when 'home'
-        .left
-          a(href='/contact').link-contact Контакты
+        //.left
+        //  a(href='/contact').link-contact Контакты
         .right
           a(href='/about').link-about О нас
       when 'order'
@@ -57,6 +57,7 @@ mixin draw-list(page)
         when 'home'
           - var link = '/'+item.link
           - var imgpath = '/images/home/'+item.link+'.jpg'
+          - var desc = item.desc
         when 'element-page'
           - var link = '/element/'+item.link
           - var imgpath = '/images/element/'+item.link+'.jpg'
@@ -71,8 +72,11 @@ mixin draw-list(page)
       a(href='#{link}', title="#{item.title}").link-no-decor
         .teaser-section
           h2 #{item.title}
+          if page.type == 'home'
+            img(src='/images/logo_line_medium.svg').logo-line-medium
           .teaser-img-wrapper
             img(src='#{imgpath}', alt="#{item.title}")
+          h3 #{desc}
 
 mixin style-page(page)
   +nav(page)
@@ -135,14 +139,14 @@ mixin zone-page(page)
           p !{page.content.desc}
           p !{page.content.decor}
           
-          p Элементы: 
-            - var i = 0;
-            while i < page.list2.length
-              a(href="#{page.list2[i].link}") #{page.list2[i].title}
-              if ++i != page.list2.length
-                text=", " 
-              else 
-                text="."
+          //p Элементы: 
+          //  - var i = 0;
+          //  while i < page.list2.length
+          //   a(href="#{page.list2[i].link}") #{page.list2[i].title}
+          //    if ++i != page.list2.length
+          //      text=", " 
+          //    else 
+          //      text="."                
         .clearfix
 
       .col
@@ -266,4 +270,3 @@ head
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='/jquery.bxslider.js')
     script(src='/app.min.js')
-

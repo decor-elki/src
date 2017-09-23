@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Дом – это всегда оплот праздника, не зря Дед Мороз во многих сказках спускается через каминную трубу. Наполните свой дом новогодним волшебством. Принесите в каждую комнату хотя бы маленькую частичку новогодней сказки. Вы получите заряд доброты, волшебства и позитива на весь следующий год.'
+
+
+  - var page = {title: 'Загородный дом', url: 'zone/country_house', type: 'zone-page', class: 'page zone country_house', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/country_house/country_house-', qnt: 15}, button: {text: 'Заказать оформление загородного дома'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

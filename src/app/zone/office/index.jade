@@ -1,0 +1,12 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'В бизнес центре всегда много арендаторов, посетителей, гостей. Вы можете очень просто подарить им праздник и хорошее настроение – позвольте нам нарядить для Вас ёлку и красиво украсить холл. Все, проходящие мимо неё, просто будут счастливы. <p>Офис – это пространство Вашего стиля, корпоративного духа. Сплотите свою команду и своих партнеров, подарите им ощущение настоящего праздника'
+
+  - var page = {title: 'Бизнес центры и офисы', url: 'zone/office', type: 'zone-page', class: 'page zone office', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/office/office-', qnt: 9}, button: {text: 'Заказать оформление офиса'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

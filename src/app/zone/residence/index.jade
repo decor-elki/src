@@ -1,0 +1,12 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Резиденции, представительства, посольства – это те помещения, которые всегда несут свой стиль и колорит. Их декорирование всегда обязывает к корректности, изыску и сдержанности. Всегда должен быть соблюден баланс новогодней сказки с замыслом этого помещения.'
+
+
+  - var page = {title: 'Резиденции, представительства, посольства', url: 'zone/residence', type: 'zone-page', class: 'page zone residence', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/residence/residence-', qnt: 11}, button: {text: 'Заказать оформление резиденции'}, list2: []};
+
+
+block content
+  +zone-page(page)

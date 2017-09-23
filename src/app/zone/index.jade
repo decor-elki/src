@@ -1,0 +1,22 @@
+extends ../_layout
+
+
+block vars
+
+  - var page = {title: 'Зоны', url: 'zone', type: 'list', class: 'list zone', content: {}, list: []};
+
+  - page.list.push({title: 'Торговые центы', link: 'mall'})
+  - page.list.push({title: 'Витрины магазинов', link: 'showcase'})
+  - page.list.push({title: 'Офисы и бизнес центры', link: 'office'})
+  - page.list.push({title: 'Техно декор', link: 'tehno_decor'})
+  - page.list.push({title: 'Рестораны', link: 'restaurant'})
+  - page.list.push({title: 'Гостиницы', link: 'hotel'})
+  - page.list.push({title: 'Автосалоны', link: 'carshow'})
+  - page.list.push({title: 'Жилые(загородные) дома', link: 'country_house'})
+  - page.list.push({title: 'Квартиры', link: 'flat'})
+  - page.list.push({title: 'Outdoor(вход, крыльцо)', link: 'outdoor'})
+  - page.list.push({title: 'Резиденции, представительства, посольства', link: 'residence'})
+  - page.list.push({title: 'Фотозоны', link: 'photozone'})
+
+block content
+  +list-page(page)

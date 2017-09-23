@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Подъезд, вход, крыльцо – это то, с чего все начинается. Для привлечения внимания посетителей или просто для того, чтобы переключится любому входящему на атмосферу праздника, волшебства и веселья, именно вход в помещение должен быть украшен с размахом.'
+
+
+  - var page = {title: 'Outdoor (вход, крыльцо)', url: 'zone/outdoor', type: 'zone-page', class: 'page zone outdoor', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/outdoor/outdoor-', qnt: 11}, button: {text: 'Заказать оформление крыльца'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

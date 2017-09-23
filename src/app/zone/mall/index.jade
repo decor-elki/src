@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Торговые и развлекательные центры – это место постоянного притяжения большого количества посетителей. Здесь как нигде нужно создать такую атмосферу праздника и волшебства, чтобы люди приходили еще и еще, и обязательно хотели вернуться сами и пригласить с собой своих друзей.'
+
+
+  - var page = {title: 'Торовые центры', url: 'zone/mall', type: 'zone-page', class: 'page zone mall', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/mall/mall-', qnt: 10}, button: {text: 'Заказать оформление торгового центра'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

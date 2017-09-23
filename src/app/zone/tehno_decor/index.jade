@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Это скорее сооружения из различных интересных материалов и фактур, напоминающие или символизирующие ёлку и Новый год.<p>Это возможность дерзким необычным образом заявить о себе, своей исключительности и новизне – своеобразный дух нашего времени и технологический и обновленный взгляд на традиционные ценности.'
+
+
+  - var page = {title: 'Техно декор', url: 'zone/tehno_decor', type: 'zone-page', class: 'page zone tehno_decor', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/tehno_decor/tehno_decor-', qnt: 11}, button: {text: 'Заказать оформление в стиле техно декор'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

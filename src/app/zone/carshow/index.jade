@@ -1,0 +1,12 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Новый год – это редкий праздник в году, когда автосалон может полностью сменить концепцию продаж для своих покупателей и пригласить их в царство красоты и стиля, а не просто в автосалон. В Новый год случаются чудеса – подарите это чудо своим покупателям – они Вас отблагодарят.'
+
+
+  - var page = {title: 'Автосалоны', url: 'zone/carshow', type: 'zone-page', class: 'page zone carshow', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/carshow/carshow-', qnt: 10}, button: {text: 'Заказать оформление автосалона'}, list2: []};
+
+
+block content
+  +zone-page(page)

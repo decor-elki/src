@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Квартира – это в первую очередь уют. Сделайте так, чтобы ваша квартира, ваш дом стали местом притяжения для Вас, Вашей семьи, Ваших друзей. Это тот редкий случай, когда вы можете поэкспериментировать со стилями и украшениями, не делая ремонта, но привнося что–то новое и сказочное.'
+
+
+  - var page = {title: 'Квартира', url: 'zone/flat', type: 'zone-page', class: 'page zone flat', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/flat/flat-', qnt: 12}, button: {text: 'Заказать оформление квартиры'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

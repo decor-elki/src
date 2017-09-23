@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Для современного человека фотография – это что–то имеющее реальный смысл. Создание фотозон – это уже не прихоть, а обязательный элемент, который будет украшать интерьер, с одной стороны, и рассказывать о Вас на просторах интернета – с другой. Обязательно создавайте красивые фотозоны. Это элемент времени.'
+
+
+  - var page = {title: 'Фотозоны', url: 'zone/photozone', type: 'zone-page', class: 'page zone photozone', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/photozone/photozone-', qnt: 9}, button: {text: 'Заказать оформление фотозоны'}, list2: []};
+
+
+
+block content
+  +zone-page(page)

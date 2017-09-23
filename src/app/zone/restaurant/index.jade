@@ -1,0 +1,12 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Если для прочих праздник и красота – это роскошь, для ресторанов новогоднее настроение – это будничная необходимость. Чем красивее и необычнее наряжен ресторан, тем больше туда хочется вернуться и там находиться. Мы сделаем Вашу атмосферу самой притягательной в городе.'
+
+
+  - var page = {title: 'Рестораны', url: 'zone/restaurant', type: 'zone-page', class: 'page zone restaurant', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/restaurant/restaurant-', qnt: 13}, button: {text: 'Заказать оформление ресторана'}, list2: []};
+
+
+block content
+  +zone-page(page)

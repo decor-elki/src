@@ -1,0 +1,26 @@
+extends ../_layout
+
+
+block vars
+
+  - var page = {title: 'Элементы', url: 'element', type: 'list', class: 'list element', content: {}, list: []};
+
+  - page.list.push({title: 'Ёлка', link: 'fir'})
+  - page.list.push({title: 'Рождественский венок', link: 'christmas_wreath'})
+  - page.list.push({title: 'Рождественский фестон', link: 'christmas_festoon'})
+  - page.list.push({title: 'Настольная композиция', link: 'table_composition'})
+  - page.list.push({title: 'Подвесные композиции', link: 'hanging_composition'})
+  - page.list.push({title: 'Украшение лестницы', link: 'stairway'})
+  - page.list.push({title: 'Украшение камина', link: 'fireplace'})
+  - page.list.push({title: 'Композиции с подсвечниками и свечами', link: 'candles'})
+  - page.list.push({title: 'Декорирование входа', link: 'entrance'})
+  - page.list.push({title: 'Новогодние фигуры (Дед Мороз, Снегурочка) в интерьере', link: 'christmas_figures'})
+  - page.list.push({title: 'Отдельно стоящие новогодние интерьерные композиции', link: 'separate_composition'})
+  - page.list.push({title: 'Декор фотозоны', link: 'photozone_decor'})
+  - page.list.push({title: 'Световые гирлянды', link: 'light_garlands'})
+  - page.list.push({title: 'Украшение штор и окон', link: 'curtains_windows'})
+  - page.list.push({title: 'Флористические композиции', link: 'floral_composition'})
+  - page.list.push({title: 'Подарки', link: 'gift'})
+
+block content
+  +list-page(page)

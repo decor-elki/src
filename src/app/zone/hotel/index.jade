@@ -1,0 +1,13 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Гостиница для многих – это второй дом. Вы сможете благодаря нам подарить своим гостям настоящий домашний праздник, уют и сказку Нового года. Сделайте этот праздник для всех незабываемым – Ваши гости к Вам обязательно вернуться.'
+
+
+  - var page = {title: 'Гостиницы', url: 'zone/hotel', type: 'zone-page', class: 'page zone hotel', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/hotel/hotel-', qnt: 18}, button: {text: 'Заказать оформление гостиницы'}, list2: []};
+
+
+
+block content
+  +zone-page(page)
