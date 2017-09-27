@@ -1,0 +1,11 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'По сути – это разновидность рождественского венка, но более необычной, вытянутой формы. Зачастую смотрится более современно и по-дизайнерски.'
+
+  - var page = {title: 'Рождественский фестон', url: 'element/christmas_festoon', type: 'element-page', class: 'page element christmas_festoon', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/christmas_festoon/christmas_festoon-', qnt: 0}, button: {text: 'Заказать оформление c рождественским фестоном'}, list2: []};
+
+
+block content
+  +element-page(page)

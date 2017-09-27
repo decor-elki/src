@@ -1,0 +1,11 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'За последние десятилетия стал очень популярен и в России. Обычно вешается на дверь, иногда на стены. Очень простой способ добавить в интерьер отдельной комнаты частичку праздника – повесить на дверь рождественский венок.'
+
+  - var page = {title: 'Рождественский венок', url: 'element/christmas_wreath', type: 'element-page', class: 'page element christmas_wreath', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/christmas_wreath/christmas_wreath-', qnt: 0}, button: {text: 'Заказать оформление c рождественским венком'}, list2: []};
+
+
+block content
+  +element-page(page)

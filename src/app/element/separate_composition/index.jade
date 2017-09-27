@@ -1,0 +1,11 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'Иногда ставить много ёлок в разных комнатах не хочется, чтобы не сбивать внимания с главной, а добавить элементы Нового года нужно. Тогда на помощь приходят отдельно стоящие новогодние композиции.'
+
+  - var page = {title: 'Отдельно стоящие новогодние интерьерные композиции', url: 'element/separate_composition', type: 'element-page', class: 'page element separate_composition', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/separate_composition/separate_composition-', qnt: 0}, button: {text: 'Заказать оформление интерьерных композиций'}, list2: []};
+
+
+block content
+  +element-page(page)
