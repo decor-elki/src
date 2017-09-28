@@ -1,0 +1,11 @@
+extends ../../_layout
+
+block vars
+
+  - var description = 'ЛОЗУНГ Поддержите свой корпоративный дух<br>ОБЩЕЕ ОПИСАНИЕ Этот вид елки – это всегда лицо компании<br>ОПИСАНИЕ ЕЛКИ Обычно все очень стильно, выдержано, со вкусом.<br>ЭЛЕМЕНТЫ Брендированные ленты и шарики. Цветовая гамма – использование колористики бренда компании. Могут быть шары, пряники, машинки, дома и другие символы бизнеса компании.'
+
+  - var page = {title: 'Брендированные ёлки', url: 'styles/branded', type: 'styles', class: 'page element branded', content: {desc: description}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/branded/branded-', qnt: 0}, button: {text: 'Заказать брендированную ёлку'}, list2: []};
+
+
+block content
+  +element-page(page)

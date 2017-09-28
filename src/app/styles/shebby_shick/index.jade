@@ -1,0 +1,11 @@
+extends ../../_layout
+
+block vars
+
+  - var description = ''
+
+  - var page = {title: 'Брендированные ёлки', url: 'styles/branded', type: 'styles', class: 'page element branded', content: {desc: description}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/branded/branded-', qnt: 0}, button: {text: 'Заказать брендированную ёлку'}, list2: []};
+
+
+block content
+  +element-page(page)

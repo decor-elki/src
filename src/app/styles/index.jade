@@ -1,0 +1,22 @@
+extends ../_layout
+
+
+block vars
+
+  - var page = {title: 'Стили ёлок', url: 'styles', type: 'list', class: 'list styles', content: {}, list: []};
+
+  - page.list.push({title: 'Кантри', link: 'country'})
+  - page.list.push({title: 'Прованс', link: 'provence'})
+  - page.list.push({title: 'Скандинавский', link: 'scandinavian'})
+  - page.list.push({title: 'Европейский', link: 'european'})
+  - page.list.push({title: 'Восточный', link: 'east'})
+  - page.list.push({title: 'Традиционный русский', link: 'traditional_russian'})
+  - page.list.push({title: 'Тематические', link: 'theme'})
+  - page.list.push({title: 'Брендированныеи', link: 'branded'})
+  - page.list.push({title: 'Флористические', link: 'floristic'})
+  - page.list.push({title: 'Традиционная', link: 'traditional'})
+  - page.list.push({title: 'Белые и заснеженные', link: 'white_snow'})
+  - page.list.push({title: 'Шебби шик', link: 'shebby_shick'})
+  
+block content
+  +list-page(page)
