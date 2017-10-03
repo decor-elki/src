@@ -2,10 +2,12 @@ extends ../../_layout
 
 block vars
 
-  - var description = 'ЛОЗУНГ<br>Любая ёлка может расцвести цветами<br>ОБЩЕЕ ОПИСАНИЕ<br>Создайте истинно новогоднее чудо - переплетите прекрасное с прекрасным.<br>ОПИСАНИЕ ЁЛКИ<br>Всегда использование цветов (стабилизированных, искусственных, живых), много растений (пуанцетии и другие)<br>ЭЛЕМЕНТЫ<br>Заснеженные цветы, ленты мох – все необычно и обыгранно искусными цветочными композициями. Всегда шедевр.'
+  - var slogan = 'Любая ёлка может расцвести цветами.'
 
-  - var page = {title: 'Флористические ёлки', url: 'styles/floristic', type: 'styles', class: 'page element floristic', content: {desc: description}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/floristic/floristic-', qnt: 0}, button: {text: 'Заказать флористическую ёлку'}, list2: []};
+  - var description = 'ОБЩЕЕ ОПИСАНИЕ<br>Создайте истинно новогоднее чудо - переплетите прекрасное с прекрасным.<br>ОПИСАНИЕ ЁЛКИ<br>Всегда использование цветов (стабилизированных, искусственных, живых), много растений (пуанцетии и другие)<br>ЭЛЕМЕНТЫ<br>Заснеженные цветы, ленты мох – все необычно и обыгранно искусными цветочными композициями. Всегда шедевр.'
+
+  - var page = {title: 'Флористические ёлки', url: 'styles/floristic', type: 'styles', class: 'page style floristic', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/floristic/floristic-', qnt: 0}, button: {text: 'Заказать флористическую ёлку'}, list2: []};
 
 
 block content
-  +element-page(page)
+  +styles(page)

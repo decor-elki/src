@@ -78,31 +78,35 @@ mixin draw-list(page)
             img(src='#{imgpath}', alt="#{item.title}")
           h3 #{desc}
 
-
-mixin style-page(page)
+mixin styles(page)
   +nav(page)
   .container
-    h1: span #{page.title}
-    p !{page.content.desc}
-    .clearfix
-    h2 Варианты оформления в стиле #{page.title}:
-    .col
-      center
-        .slider
-         - var i = 1;
-         while i < page.slider.qnt + 1
-          .slide
-            img(src='/images/#{page.slider.path}#{i++}.jpg')
+    h2 #{page.title}
+    h3: center #{page.content.slgn}
     .row
       .col
-        h2: span Флористика 
-        p !{page.content.flow}
+        .desc
+          p !{page.content.desc}
+        .clearfix
       .col
-        h2: span Must–have
-        p !{page.content.must}
+        //sketch
+        img(src='/images/#{page.url}-sketch.jpg').styles-img-sketch
+      .col
+        center
+          .slider
+            - var i = 1;
+            while i < page.slider.qnt + 1
+              .slide
+                img(src='/images/#{page.slider.path}#{i++}.jpg')
+
     .row
       center
-        a(href="/order").btn Заказать оформление в стиле #{page.title}
+        a(href="/order").btn #{page.button.text}
+        br
+        br
+    .row
+      +draw-list(page)
+
 
 mixin element-page(page)
   +nav(page)
@@ -163,36 +167,6 @@ mixin zone-page(page)
         a(href="/order").btn #{page.button.text}
         br
         br
-    .row
-      +draw-list(page)
-
-
-mixin color-page(page)
-  +nav(page)
-  .container
-    h1: span #{page.title}
-    .row
-      .col
-        .desc
-          h3 Символика
-          p !{page.content.symb}
-          h3 Настроение
-          p !{page.content.mood}
-          h3 Сочетания
-          p !{page.content.comb}
-        .clearfix
-
-      .col
-        center
-          .slider
-            - var i = 1;
-            while i < page.slider.qnt + 1
-              .slide
-                img(src='/images/#{page.slider.path}#{i++}.jpg')
-
-    .row
-      center
-        a(href="/order").btn Заказать оформление
     .row
       +draw-list(page)
 

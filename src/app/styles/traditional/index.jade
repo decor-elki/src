@@ -2,10 +2,12 @@ extends ../../_layout
 
 block vars
 
-  - var description = 'ЛОЗУНГ<br>Ёлка родом из нашего общего детства.<br>ОБЩЕЕ ОПИСАНИЕ<br>Всегда живая ель, которая несет в дом запах хвои, зиму, Новый год, лучшие детские впечатления.<br>ОПИСАНИЕ ЁЛКИ<br>Основной акцент – живая ёлка. Все остальные элементы декора её лишь добавляют, но не забивают.<br>ЭЛЕМЕНТЫ<br>Обычно без чётко выраженной стилистики. Просто подбираются красивые композиции.'
+  - var slogan = 'Ёлка родом из нашего общего детства.'
+  
+  - var description = 'ОБЩЕЕ ОПИСАНИЕ<br>Всегда живая ель, которая несет в дом запах хвои, зиму, Новый год, лучшие детские впечатления.<br>ОПИСАНИЕ ЁЛКИ<br>Основной акцент – живая ёлка. Все остальные элементы декора её лишь добавляют, но не забивают.<br>ЭЛЕМЕНТЫ<br>Обычно без чётко выраженной стилистики. Просто подбираются красивые композиции.'
 
-  - var page = {title: 'Традиционная живая ёлка', url: 'styles/traditional', type: 'styles', class: 'page element traditional', content: {desc: description}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/traditional/traditional-', qnt: 0}, button: {text: 'Заказать традиционную ёлку'}, list2: []};
+  - var page = {title: 'Традиционная живая ёлка', url: 'styles/traditional', type: 'styles', class: 'page style traditional', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/traditional/traditional-', qnt: 0}, button: {text: 'Заказать традиционную ёлку'}, list2: []};
 
 
 block content
-  +element-page(page)
+  +styles(page)

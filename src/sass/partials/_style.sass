@@ -7,7 +7,7 @@
     text-align: center
     span
       +breakpoint(min-width $break-small)
-        padding: 2.3rem 3.8rem
+        padding: 2.0rem 2.0rem
         &:before
           +page_title_ico
           background: url('/images/style-title-left.svg') no-repeat 0 0
@@ -20,26 +20,21 @@
     text-align: center
     span
       +breakpoint(min-width $break-small)
-        padding: 2.2rem
-        width: 8.5rem
+        padding: 2.0rem
         &:before
           +page_subtitle_ico
-          background: url('/images/style-subtitle-left.svg') no-repeat 0 0
+          background: url('/images/style-subtitle-left.png') no-repeat 0 0
           left: 0
         &:after
           +page_subtitle_ico
-          background: url('/images/style-subtitle-right.svg') no-repeat 0 0
+          background: url('/images/style-subtitle-right.png') no-repeat 0 0
           right: 0
   .desc
     text-align: justify
-    +breakpoint(max-width $break-small)
       +span(12)
-    +breakpoint(min-width $break-small)
-      +span(6)
-      +push(3)
-    +breakpoint(min-width $break-medium)
-      +span(4)
-      +push(4)
+  
+  .col
+    width: 33%
 
   .row .col
     +breakpoint(max-width $break-small)
@@ -48,10 +43,12 @@
       +span(6)
     +breakpoint(min-width $break-medium)
       +span(5)
-      +push(1)
+      //+push(1)
+
   p
     line-height: 1.5
     font-size: 1.2rem
     text-align: justify
-
-
+  
+.styles-img-sketch
+  width: 100%

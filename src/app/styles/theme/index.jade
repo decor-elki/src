@@ -2,10 +2,12 @@ extends ../../_layout
 
 block vars
 
-  - var description = 'ЛОЗУНГ<br>Задай смысл своему Новому Году<br>ОБЩЕЕ ОПИСАНИЕ<br>В этой ёлке всегда есть смысл, она что – то выражает. Часто может перекликаться с темой новогодней вечеринки.<br>ОПИСАНИЕ ЁЛКИ<br>Обычно берется конкретная тематика (Золушка, Щелкунчик, Гномы и т.п) и все украшение ёлки и помещения обыгрывает выбранную тематику.<br>ЭЛЕМЕНТЫ<br>Выбраны под заданную тематику'
+  - var slogan = 'Задай смысл своему Новому Году'
 
-  - var page = {title: 'Тематические ёлки', url: 'styles/theme', type: 'styles', class: 'page element theme', content: {desc: description}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/theme/theme-', qnt: 0}, button: {text: 'Заказать тематическую ёлку'}, list2: []};
+  - var description = 'ОБЩЕЕ ОПИСАНИЕ<br>В этой ёлке всегда есть смысл, она что – то выражает. Часто может перекликаться с темой новогодней вечеринки.<br>ОПИСАНИЕ ЁЛКИ<br>Обычно берется конкретная тематика (Золушка, Щелкунчик, Гномы и т.п) и все украшение ёлки и помещения обыгрывает выбранную тематику.<br>ЭЛЕМЕНТЫ<br>Выбраны под заданную тематику'
+
+  - var page = {title: 'Тематические ёлки', url: 'styles/theme', type: 'styles', class: 'page style theme', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/theme/theme-', qnt: 0}, button: {text: 'Заказать тематическую ёлку'}, list2: []};
 
 
 block content
-  +element-page(page)
+  +styles(page)
