@@ -110,6 +110,7 @@ mixin styles(page)
     .row
       +draw-list(page)
 
+- var rnum = Math.floor(Math.random() * 72 + 1)
 
 mixin element-page(page)
   +nav(page)
@@ -117,7 +118,9 @@ mixin element-page(page)
     h1: span #{page.title}
     .row
       .col
-        .desc
+        .myimg
+           img(src = 'images/png_icons/png icons-#{rnum}.png')
+        .desc   
           p !{page.content.desc}
         .clearfix
 
@@ -128,6 +131,7 @@ mixin element-page(page)
             while i < page.slider.qnt + 1
               .slide
                 img(src='/images/#{page.slider.path}#{i++}.jpg')
+      .clearfix
 
     .row
       center
@@ -143,6 +147,8 @@ mixin zone-page(page)
     h1: span #{page.title}
     .row
       .col
+        .myimg
+           img(src = 'images/png_icons/png icons-#{rnum}.png')
         .desc
           p !{page.content.desc}
           p !{page.content.decor}

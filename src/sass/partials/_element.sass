@@ -1,11 +1,15 @@
 
+$rnum: random(100)
+
 .page.element
   .container
     +breakpoint(min-width $break-small)
       margin-top: -2rem
+
   .desc
     text-align: justify
       +span(12)
+      
 
   .row .col
     +breakpoint(max-width $break-small)
@@ -15,6 +19,15 @@
     +breakpoint(min-width $break-medium)
       +span(5)
       +push(1)
+
+  .myimg
+    img
+      +span(1)
+      width: span(1)
+      position: absolute
+      left: 1%
+      top: 5%
+
   p
     line-height: 1.5
     font-size: 1.2rem
@@ -34,7 +47,7 @@
           background-size: contain
           vertical-align: middle
           height: 30 
-          right: 10
+          margin-right: 10
         &:after
           +page_subtitle_ico
           position: relative
@@ -43,5 +56,5 @@
           background-size: contain
           vertical-align: middle
           height: 30
-          left: 10
+          margin-left: 10
 

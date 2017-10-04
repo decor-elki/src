@@ -16,6 +16,14 @@
       +span(5)
       +push(1)
 
+  .myimg
+    img
+      +span(1)
+      width: span(1)
+      position: absolute
+      left: 1%
+      top: 5%
+
   h1
     span
       +breakpoint(min-width $break-small)
@@ -28,7 +36,7 @@
           background-size: contain
           vertical-align: middle
           height: 30 
-          right: 10
+          margin-right: 10
 
         &:after
           +page_subtitle_ico
@@ -38,7 +46,7 @@
           background-size: contain
           vertical-align: middle
           height: 30
-          left: 10
+          margin-left: 10
 
  
   p
