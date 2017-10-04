@@ -78,11 +78,13 @@
   font-weight: normal
 
 .teaser-section
-  +span(3)
-  +breakpoint(max-width $break-medium)
-    +span(6)
   +breakpoint(max-width $break-small)
     +span(12)
+  +breakpoint(min-width $break-small)
+    +span(6)
+  +breakpoint(min-width $break-medium)
+    +span(3)
+
   text-align: center
   h2
     font-size: 1.2rem
@@ -91,8 +93,10 @@
     color: $color-brown
   .teaser-img-wrapper
     overflow: hidden
-    margin: 1rem 2rem 2rem
+    margin: 10 10 10
     padding-top: 0.5rem
+    //+breakpoint(max-height 800)
+    //min-height: 200
     //border-top: 1px solid $color-brown
     img
       width: 100%
@@ -103,10 +107,10 @@
     font-size: 1.2rem
 
 .logo-line-medium
-    margin-left: 20pt
-    margin-right: 100pt
+    //margin-left: 20pt
+    //margin-right: 100pt
     position: relative
-    width: 260
+    width: 100%
     
 .nav-client
   display: block

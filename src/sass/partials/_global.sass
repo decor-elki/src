@@ -92,21 +92,21 @@ table.doc-list
     font-size: 15
     text-align: center
 
-  .teaser-section
-    min-height: 250px;
-    margin-bottom: 1rem
-    h2
+  //.teaser-section
+  //  min-height: 250px;
+  //  margin-bottom: 1rem
+  //  h2
     ///  min-height: 56px;
-      font-size: 20
-      font-family: 'Helvetica Light', sans-serif
-      text-align: left
-      margin-left: 20pt
+  //    font-size: 20
+  //    font-family: 'Helvetica Light', sans-serif
+  //    text-align: left
+  //    margin-left: 20pt
 
 
 .list
   h1
     span
-      padding: 0 4rem
+      padding: 0 2rem
       +breakpoint(min-width $break-small)
         &:before
           +link_ico
@@ -147,34 +147,6 @@ table.doc-list
     position: absolute
     width: 4rem
 
-//
-//.environment-img-col
-//  +span(8)
-//  +breakpoint(max-width $break-small)
-//    +span(12)
-//  .container
-//    +layout(12 1)
-//    .img-wrapper
-//      +span(9)
-//      height: 30rem
-//      overflow: hidden
-//      img
-//        height: 100%
-//    .img-thumbnail-list
-//      +span(3)
-//      list-style: none
-//      padding: 0
-//      margin: 0
-//      li
-//        margin-left: 0.5rem
-//        margin-bottom: 0.5rem
-//        height: 5rem
-//        overflow: hidden
-//        img
-//          height: 100%
-
-
-
 .contact
   text-align: center
   color: $color-brown
@@ -196,7 +168,7 @@ table.doc-list
     text-align: center
     span
       +breakpoint(min-width $break-small)
-        padding: 2.3rem 3.8rem
+        padding: 1rem 1rem
         &:before
           +page_title_ico
           background: url('/images/style-title-left.svg') no-repeat 0 0

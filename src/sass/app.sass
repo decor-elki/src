@@ -66,7 +66,7 @@ a, p, h1, h2, h3
   clear: both
 
 .row
-  +layout(auto 12 .35 inside)
+  +layout(auto 4 .35 inside)
   position: relative
   overflow: hidden
   z-index: 1000
@@ -79,25 +79,6 @@ a, p, h1, h2, h3
   align-self: center
 
 
-// link to font http://fonts4web.ru/Helvetica.html#test
-// @font-face
-//   font-family: "Helvetica"
-//   src: url("/static/fonts/HelveticaRegular/HelveticaRegular.eot")
-//   src: url("/static/fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"), url("/static/fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("/static/fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype")
-//   font-weight: normal
-
-// @font-face
-//   font-family: "Helvetica"
-//   src: url("/static/fonts/HelveticaBold/HelveticaBold.eot")
-//   src: url("/static/fonts/HelveticaBold/HelveticaBold.eot?#iefix")format("embedded-opentype"), url("/static/fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("/static/fonts/HelveticaBold/HelveticaBold.ttf") format("truetype")
-//   font-weight: bold
-
-// @font-face
-//   font-family: "Helvetica"
-//   src: url("/static/fonts/HelveticaLight/HelveticaLight.eot")
-//   src: url("/static/fonts/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"), url("/static/fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("/static/fonts/HelveticaLight/HelveticaLight.ttf") format("truetype")
-//   font-weight: 100
-
 @mixin transition($params...)
   -webkit-transition:  $params
   -moz-transition:  $params
@@ -109,7 +90,7 @@ a, p, h1, h2, h3
   ::-webkit-input-placeholder 
     @content
   :-moz-placeholder           
-    @conten
+    @content
   ::-moz-placeholder          
     @content
   :-ms-input-placeholder      
@@ -135,7 +116,7 @@ a, p, h1, h2, h3
     color: $color-brown
 
 
-@import "./partials/shadow"
+//@import "./partials/shadow"
 @import "./partials/global"
 @import "./partials/header"
 @import "./partials/style"

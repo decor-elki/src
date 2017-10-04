@@ -78,6 +78,7 @@ mixin draw-list(page)
             img(src='#{imgpath}', alt="#{item.title}")
           h3 #{desc}
 
+
 mixin styles(page)
   +nav(page)
   .container
@@ -91,6 +92,7 @@ mixin styles(page)
       .col
         //sketch
         img(src='/images/#{page.url}-sketch.jpg').styles-img-sketch
+        .clearfix
       .col
         center
           .slider
@@ -98,6 +100,7 @@ mixin styles(page)
             while i < page.slider.qnt + 1
               .slide
                 img(src='/images/#{page.slider.path}#{i++}.jpg')
+          .clearfix
 
     .row
       center
@@ -144,14 +147,6 @@ mixin zone-page(page)
           p !{page.content.desc}
           p !{page.content.decor}
           
-          //p Элементы: 
-          //  - var i = 0;
-          //  while i < page.list2.length
-          //   a(href="#{page.list2[i].link}") #{page.list2[i].title}
-          //    if ++i != page.list2.length
-          //      text=", " 
-          //    else 
-          //      text="."                
         .clearfix
 
       .col
@@ -235,9 +230,11 @@ head
   block styles
     link(rel='stylesheet' href='/app.min.css')
     link(rel='stylesheet' href='/jquery.bxslider.css')
-  base(href="/" target="_self")
-  body(class!='#{page.class}')
-    block content
+    link(rel='stylesheet' href='https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css')
+    base(href="/" target="_self")
+    body(class!='#{page.class}')
+  
+  block content
 
   block metrics
 

@@ -20,4 +20,28 @@
     font-size: 1.2rem
     text-align: justify
 
+  h1
+    text-align: center
+    span
+      +breakpoint(min-width $break-small)
+        padding: 1.0rem
+
+        &:before
+          +page_subtitle_ico
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-left.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          height: 30 
+          right: 10
+        &:after
+          +page_subtitle_ico
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-right.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          height: 30
+          left: 10
 
