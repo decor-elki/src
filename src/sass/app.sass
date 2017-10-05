@@ -125,3 +125,16 @@ a, p, h1, h2, h3
 @import "./partials/contact"
 @import "./partials/order"
 @import "./partials/about"
+
+
+
+.bx-wrapper, .bx-viewport
+  -moz-box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none !important;
+
++breakpoint(min-width $break-medium)
+  .bx-prev
+    margin-left: 5%
+  .bx-next
+    margin-right: 5%
