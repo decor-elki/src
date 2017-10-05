@@ -169,7 +169,6 @@ mixin zone-page(page)
     .row
       +draw-list(page)
 
-
 mixin sendmail
   form(action="http://formspree.io/decor-elki@mail.ru" method="post")
     p
@@ -182,7 +181,6 @@ mixin sendmail
       textarea(name="body" class="message" placeholder="Cообщение")
     p
       input(type="submit" class="button" value="Отправить")
-
 
 mixin about-page(page)
   +nav(page)
