@@ -23,7 +23,10 @@ $rnum: random(100)
   .myimg
     img
       +span(1)
-      width: span(1)
+      +breakpoint(min-width $break-medium)
+        width: span(1)
+      +breakpoint(max-width $break-medium)
+        width: 0
       position: absolute
       left: 1%
       top: 5%

@@ -1,8 +1,11 @@
+body
+  margin: 0
 
 .header-title
   font-size: 0.8rem
   +menu_font
-  margin: 0.5rem 0 0.5rem
+  //margin: 0.5rem 0 0.5rem
+  padding-top: 8px
   
   .left.header-title
     width: 40%
@@ -21,6 +24,8 @@
     font-size: 0.8rem
     text-align: center
     position: absolute
+    margin: 0
+    
     
     span
       display: block 
@@ -84,17 +89,19 @@
     +span(6)
   +breakpoint(min-width $break-medium)
     +span(3)
+  margin-bottom: 1rem
 
   text-align: center
   h2
     font-size: 1.2rem
     font-weight: 100
-    margin-bottom: 0.2rem
+    margin-bottom: 0
     color: $color-brown
+    min-height: 50
   .teaser-img-wrapper
     overflow: hidden
     margin: 10 10 10
-    padding-top: 0.5rem
+    padding-top: 0
     //+breakpoint(max-height 800)
     //min-height: 200
     //border-top: 1px solid $color-brown
@@ -128,14 +135,14 @@
     top: 2.2rem
   .link-contact
     padding: 2rem 0 0 2.5rem
-    &:before
-      +link_ico
-      left: 0
-      background: url(/images/contact.svg) no-repeat 0 0
+    //&:before
+    //  +link_ico
+    //  left: 0
+    //  background: url(/images/contact.svg) no-repeat 0 0
   .link-about
     padding: 2rem 2.8rem 0 0
-    &:after
-      +link_ico
-      right: 0
-      background: url(/images/about.svg) no-repeat 0 0
+    //&:after
+    //  +link_ico
+    //  right: 0
+    //  background: url(/images/about.svg) no-repeat 0 0
 

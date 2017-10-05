@@ -119,7 +119,7 @@ mixin element-page(page)
     .row
       .col
         .myimg
-           img(src = 'images/png_icons/png icons-#{rnum}.png')
+           img(src = 'images/png_icons/#{rnum}.png')
         .desc   
           p !{page.content.desc}
         .clearfix
@@ -148,7 +148,7 @@ mixin zone-page(page)
     .row
       .col
         .myimg
-           img(src = 'images/png_icons/png icons-#{rnum}.png')
+           img(src = 'images/png_icons/#{rnum}.png')
         .desc
           p !{page.content.desc}
           p !{page.content.decor}
@@ -234,6 +234,7 @@ head
     +title(page)
 
   block styles
+    //link(rel='stylesheet' href='/reset.css')
     link(rel='stylesheet' href='/app.min.css')
     link(rel='stylesheet' href='/jquery.bxslider.css')
     link(rel='stylesheet' href='https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css')

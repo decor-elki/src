@@ -107,15 +107,25 @@ table.doc-list
   h1
     span
       padding: 0 2rem
-      +breakpoint(min-width $break-small)
+      +breakpoint(min-width $break-medium)
         &:before
           +link_ico
-          background: url('/images/list-title-left.svg') no-repeat 0 0
-          left: 0
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-left.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          width: 150px 
+          //margin-right: 10
         &:after
           +link_ico
-          background: url('/images/list-title-right.svg') no-repeat 0 0
-          right: 0
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-right.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          width: 150px
+          margin-left: 30
 
 .element-img-col
   +span(8)
