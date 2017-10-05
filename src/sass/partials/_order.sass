@@ -1,20 +1,32 @@
 .page.order
   .container
     +breakpoint(min-width $break-small)
-      margin-top: -2rem
+      //margin-top: -2rem
   h1
     text-align: center
+    margin-bottom: 1.5rem
     span
-      +breakpoint(min-width $break-small)
-        padding: 2.3rem 3.8rem
+      padding: 0
+      +breakpoint(min-width $break-medium)
         &:before
-          +page_title_ico
-          background: url('/images/style-subtitle-left.svg') no-repeat 0 0
-          left: 0
+          +page_subtitle_ico
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-left.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          height: 30 
+          margin-right: 10
+
         &:after
-          +page_title_ico
-          background: url('/images/style-subtitle-right.svg') no-repeat 0 0
-          right: 0
+          +page_subtitle_ico
+          position: relative
+          display: inline-block
+          background: url('/images/subtitle-right.png') no-repeat
+          background-size: contain
+          vertical-align: middle
+          height: 30
+          margin-left: 10
   h2
     text-align: center
     span
