@@ -4,8 +4,8 @@ mixin nav(page)
       when 'home'
         //.left
         //  a(href='/contact').link-contact Контакты
-        .right
-          a(href='/about').link-about О нас
+        //.right
+        //  a(href='/about').link-about О нас
       when 'order'
         .left.home
           a(href='/').link-no-decor LeDecor
@@ -31,7 +31,9 @@ mixin title(page)
 
 mixin front-page(page)
   .header-title
-    .left.heder-title
+    .left.header-title
+      span
+        a(href='/about').link-about О нас
     .center.header-title
       span Мы создаём <br> неповторимую атмосферу праздника!
     .right.header-title

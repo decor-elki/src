@@ -2,18 +2,21 @@
 $rnum: random(100)
 
 .page.element
+
   .container
     +breakpoint(min-width $break-small)
       margin-top: -2rem
 
   .desc
     float: left
-    width: calc(100% - 50px)
+    width: calc(100% - 100px)
     text-align: justify
+    background: #fff
       +span(12)
     p
-      padding: 0 20px
+      padding: 10px 30px
       margin: 0
+      background: #fff
 
   .row .col
     +breakpoint(max-width $break-small)
