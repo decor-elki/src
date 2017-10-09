@@ -74,6 +74,8 @@ mixin draw-list(page)
           h2 #{item.title}
           if page.type == 'home'
             img(src='/images/logo_line_medium.svg').logo-line-medium
+          else
+            img(src='/images/logo_line_medium.svg').logo-line-medium
           .teaser-img-wrapper
             img(src='#{imgpath}', alt="#{item.title}")
           h3 #{desc}
@@ -113,6 +115,8 @@ mixin styles(page)
 - var rnum = Math.floor(Math.random() * 72 + 1)
 
 mixin element-page(page)
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='/random_icons.js')
   +nav(page)
   .container
     h1: span #{page.title}
@@ -142,6 +146,9 @@ mixin element-page(page)
       +draw-list(page)
 
 mixin zone-page(page)
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='/random_icons.js')
+
   +nav(page)
   .container
     h1: span #{page.title}
@@ -246,3 +253,4 @@ head
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='/jquery.bxslider.js')
     script(src='/app.min.js')
+
