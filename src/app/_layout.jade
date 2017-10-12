@@ -179,7 +179,7 @@ mixin zone-page(page)
       +draw-list(page)
 
 mixin sendmail
-  form(action="http://formspree.io/decor-elki@mail.ru" method="post")
+  form(action="http://formspree.io/decorelki@gmail.com" method="post")
     p
       input(type="name" class ="name" name="_name" title="имя" placeholder="Ваше имя")
     p
@@ -190,6 +190,9 @@ mixin sendmail
       textarea(name="body" class="message" placeholder="Cообщение")
     p
       input(type="submit" class="button" value="Отправить")
+      input(type="hidden" name="_next" value="http://decor-elki.com")
+      input(type="hidden" name="_language" value="ru")
+      input(type="hidden" name="_subject" value="Заказ c сайта decor-elki.com")
 
 mixin about-page(page)
   +nav(page)
