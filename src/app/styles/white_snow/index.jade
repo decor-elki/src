@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Белые или заснеженные ёлки', url: 'styles/white_snow', type: 'styles', class: 'page style white_snow', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/white_snow/white_snow-', qnt: 19}, button: {text: 'Заказать заснеженную ёлку'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='снежный лес, иней, запорошенная елка')
+
+
 block content
   +styles(page)

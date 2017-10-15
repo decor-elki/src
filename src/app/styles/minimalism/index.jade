@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Минимализм', url: 'styles/minimalism', type: 'styles', class: 'page style minimalism', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/minimalism/minimalism-', qnt: 13}, button: {text: 'Заказать ёлку в стиле Минимализм'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='мини, простота, гармоничная, минимализм, мини-ёлка')
+
+
 block content
   +styles(page)

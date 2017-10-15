@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Ёлка в стилистике  интерьера', url: 'styles/interior', type: 'styles', class: 'page style interior', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/interior/interior-', qnt: 18}, button: {text: 'Заказать ёлку в стилистике интерьера'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='под интерьер, помещение, ёлка в помещение, елка в интерьере')
+
+
 block content
   +styles(page)

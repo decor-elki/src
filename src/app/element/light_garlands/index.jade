@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Использование световых гирлянд в интерьере', url: 'element/light_garlands', type: 'element-page', class: 'page element light_garlands', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/light_garlands/light_garlands-', qnt: 16}, button: {text: 'Заказать оформление cо световыми гирляндами '}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='гирлянды, огоньки, лампочки, световые гирлянды, новогодние огоньки, елочные гирлянды')
+
+
 block content
   +element-page(page)

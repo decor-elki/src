@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Украшение штор и окон', url: 'element/curtains_windows', type: 'element-page', class: 'page element curtains_windows', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/curtains_windows/curtains_windows-', qnt: 13}, button: {text: 'Заказать оформление штор и окон'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='украшение окна, декор штор, новогодние шторы')
+
+
 block content
   +element-page(page)

@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Гостиницы', url: 'zone/hotel', type: 'zone-page', class: 'page zone hotel', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/hotel/hotel-', qnt: 18}, button: {text: 'Заказать оформление гостиницы'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='новогодние программы, корпоративы, корпоративный новый год')
+
 
 block content
   +zone-page(page)

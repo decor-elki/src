@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Фотозоны', url: 'zone/photozone', type: 'zone-page', class: 'page zone photozone', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/photozone/photozone-', qnt: 9}, button: {text: 'Заказать оформление фотозоны'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='фотостудия, фотозона в офис, фотозона торговый центр, корпоратив')
+
 
 block content
   +zone-page(page)

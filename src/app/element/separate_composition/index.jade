@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Отдельно стоящие новогодние композиции', url: 'element/separate_composition', type: 'element-page', class: 'page element separate_composition', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/separate_composition/separate_composition-', qnt: 15}, button: {text: 'Заказать оформление интерьерных композиций'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='новогодние композиции')
+
+
 block content
   +element-page(page)

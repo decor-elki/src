@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Скандинавский стиль', url: 'styles/scandinavian', type: 'styles', class: 'page style scandinavian', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/scandinavian/scandinavian-', qnt: 13}, button: {text: 'Заказать ёлку в скандинавском стиле'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='натуралистичность')
+
+
 block content
   +styles(page)

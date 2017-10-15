@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Флористические композиции', url: 'element/floral_composition', type: 'element-page', class: 'page element floral_composition', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/floral_composition/floral_composition-', qnt: 16}, button: {text: 'Заказать оформление c цветочными композициями'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='цветы, цветовые композиции, новогодние букеты, дизайнерские букеты, авторские букеты')
+
+
 block content
   +element-page(page)

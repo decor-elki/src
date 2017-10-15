@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Торовые центры', url: 'zone/mall', type: 'zone-page', class: 'page zone mall', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/mall/mall-', qnt: 10}, button: {text: 'Заказать оформление торгового центра'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='корпоративная елка, корпоративная ёлка, большие пространства')
+
 
 block content
   +zone-page(page)

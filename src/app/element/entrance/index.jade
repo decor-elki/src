@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Декорирование входа', url: 'element/entrance', type: 'element-page', class: 'page element entrance', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/entrance/entrance-', qnt: 16}, button: {text: 'Заказать оформление входа'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='декорирование входа, декорирование подъезда')
+
+
 block content
   +element-page(page)

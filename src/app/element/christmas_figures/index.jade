@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Новогодние фигуры (Дед Мороз, Снегурочка)', url: 'element/christmas_figures', type: 'element-page', class: 'page element christmas_figures', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/christmas_figures/christmas_figures-', qnt: 18}, button: {text: 'Заказать оформление c новогодними фигурами'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='новогодние фигуры, дед мороз, снегурочка, олени, снеговики, животные')
+
+
 block content
   +element-page(page)

@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Брендированные ёлки', url: 'styles/branded', type: 'styles', class: 'page style branded', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/branded/branded-', qnt: 11}, button: {text: 'Заказать брендированную ёлку'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='корпоративная ёлка, корпоративный нг, крпоративный новый год')
+
+
 block content
   +styles(page)

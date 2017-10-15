@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Традиционная живая ёлка', url: 'styles/traditional', type: 'styles', class: 'page style traditional', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/traditional/traditional-', qnt: 14}, button: {text: 'Заказать традиционную ёлку'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='живая хвоя')
+
+
 block content
   +styles(page)

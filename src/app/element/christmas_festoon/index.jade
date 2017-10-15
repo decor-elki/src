@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Рождественский фестон', url: 'element/christmas_festoon', type: 'element-page', class: 'page element christmas_festoon', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/christmas_festoon/christmas_festoon-', qnt: 16}, button: {text: 'Заказать оформление c рождественским фестоном'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='фестон, изготовление фестона')
+
+
 block content
   +element-page(page)

@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Загородный дом', url: 'zone/country_house', type: 'zone-page', class: 'page zone country_house', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/country_house/country_house-', qnt: 15}, button: {text: 'Заказать оформление загородного дома'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='природа, дача, в лесу, усадьба, коттедж, новый год на даче, оформление коттеджа')
+
 
 block content
   +zone-page(page)

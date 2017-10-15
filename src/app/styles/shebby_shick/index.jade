@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Шебби шик', url: 'styles/shebby_shick', type: 'styles', class: 'page style shebby_shick', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/shebby_shick/shebby_shick-', qnt: 11}, button: {text: 'Заказать ёлку в стиле Шебби шик'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='застаренный шик, шебби шик, shebby shick, shebby')
+
+
 block content
   +styles(page)

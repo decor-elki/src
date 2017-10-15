@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Композиции с подсвечниками и свечами', url: 'element/candles', type: 'element-page', class: 'page element candles', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/candles/candles-', qnt: 17}, button: {text: 'Заказать оформление c подсвечниками и свечами'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='свечи, подсвечники')
+
+
 block content
   +element-page(page)

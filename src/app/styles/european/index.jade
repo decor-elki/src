@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Европейский стиль', url: 'styles/european', type: 'styles', class: 'page style european', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/european/european-', qnt: 17}, button: {text: 'Заказать ёлку в Европейском стиле'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='роскошь, изысканность, стиль')
+
+
 block content
   +styles(page)

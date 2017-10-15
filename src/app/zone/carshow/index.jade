@@ -8,5 +8,9 @@ block vars
   - var page = {title: 'Автосалоны', url: 'zone/carshow', type: 'zone-page', class: 'page zone carshow', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/carshow/carshow-', qnt: 10}, button: {text: 'Заказать оформление автосалона'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='украшение автосалона')
+
 block content
   +zone-page(page)

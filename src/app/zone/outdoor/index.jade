@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Уличный декор', url: 'zone/outdoor', type: 'zone-page', class: 'page zone outdoor', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/outdoor/outdoor-', qnt: 11}, button: {text: 'Заказать оформление крыльца'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='уличная елка, высокая елка, уличная ёлка, высокая ёлка, праздничное освещение, иллюминация')
+
 
 block content
   +zone-page(page)

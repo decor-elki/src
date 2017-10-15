@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Флористические ёлки', url: 'styles/floristic', type: 'styles', class: 'page style floristic', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/floristic/floristic-', qnt: 14}, button: {text: 'Заказать флористическую ёлку'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='цветы, растения, цветочный новый год')
+
+
 block content
   +styles(page)

@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Украшение лестницы', url: 'element/stairway', type: 'element-page', class: 'page element stairway', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/stairway/stairway-', qnt: 17}, button: {text: 'Заказать оформление лестниц'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='лестница, новогодняя лестница, декор лестниц')
+
+
 block content
   +element-page(page)

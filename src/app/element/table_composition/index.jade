@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Настольная композиция', url: 'element/table_composition', type: 'element-page', class: 'page element table_composition', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/table_composition/table_composition-', qnt: 19}, button: {text: 'Заказать оформление настольных композиций'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='настольная композиция, новогодний стол')
+
+
 block content
   +element-page(page)

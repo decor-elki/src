@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Декор стульев', url: 'element/chairs', type: 'element-page', class: 'page element chairs', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/chairs/chairs-', qnt: 15}, button: {text: 'Заказать оформление cтульев'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='декор стульев, украшение стульев')
+
+
 block content
   +element-page(page)

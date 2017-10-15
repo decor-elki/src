@@ -9,5 +9,10 @@ block vars
   - var page = {title: 'Хай-тек', url: 'styles/hi_tech', type: 'styles', class: 'page style hi_tech', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/hi_tech/hi_tech-', qnt: 14}, button: {text: 'Заказать ёлку в стиле хай-тек'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='световые конструкции, современная ёлка, hi tech, хай-тек, hi-tech елка')
+
+
 block content
   +styles(page)

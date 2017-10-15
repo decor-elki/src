@@ -7,6 +7,10 @@ block vars
   - var page = {title: 'Бизнес центры и офисы', url: 'zone/office', type: 'zone-page', class: 'page zone office', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/office/office-', qnt: 9}, button: {text: 'Заказать оформление офиса'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='бизнес, бизнес елка, корпоратив, корпоративный новый год, корпоративный праздник')
+
 
 block content
   +zone-page(page)

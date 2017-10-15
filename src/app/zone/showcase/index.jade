@@ -8,6 +8,10 @@ block vars
   - var page = {title: 'Витрины магазинов', url: 'zone/showcase', type: 'zone-page', class: 'page zone showcase', content: {desc: description, elements: elements}, list: [], breadcrumbs: [{link: 'zone', name: 'Оформление зон'}], slider: {path: 'zone/showcase/showcase-', qnt: 17}, button: {text: 'Заказать оформление витрины'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='магазины, бренд, окна, витринистика')
+
 
 block content
   +zone-page(page)

@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Подвесные композиции (люстры, потолок)', url: 'element/hanging_composition', type: 'element-page', class: 'page element hanging_composition', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/hanging_composition/hanging_composition-', qnt: 15}, button: {text: 'Заказать оформление c подвесными композициями'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='люстры, потолок, украшение потолка, новогодние люстры')
+
+
 block content
   +element-page(page)

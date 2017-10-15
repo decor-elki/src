@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Рождественский венок', url: 'element/christmas_wreath', type: 'element-page', class: 'page element christmas_wreath', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/christmas_wreath/christmas_wreath-', qnt: 16}, button: {text: 'Заказать оформление c рождественским венком'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='рождественский венок, новогодний венок')
+
+
 block content
   +element-page(page)

@@ -9,5 +9,11 @@ block vars
   - var page = {title: 'Кантри-стиль', url: 'styles/country', type: 'styles', class: 'page style country', content: {desc: description, slgn: slogan}, list: [], breadcrumbs: [{link: 'styles', name: 'Стили'}], slider: {path: 'styles/country/country-', qnt: 14}, button: {text: 'Заказать ёлку в стиле Кантри'}, list2: []};
 
 
+
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='эко, кантри, деревня, ёлка')
+
+
 block content
   +styles(page)

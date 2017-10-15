@@ -7,5 +7,10 @@ block vars
   - var page = {title: 'Ёлка', url: 'element/fir', type: 'element-page', class: 'page element fir', content: {desc: description}, list: [], breadcrumbs: [{link: 'element', name: 'Элементы'}], slider: {path: 'element/fir/fir-', qnt: 11}, button: {text: 'Заказать оформление ёлки'}, list2: []};
 
 
+block append meta
+  meta(name='description', content='')
+  meta(name='keywords', content='елка, ёлка, ёлочка, новогодня ёлка, нг')
+
+
 block content
   +element-page(page)
