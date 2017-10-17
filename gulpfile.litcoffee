@@ -32,6 +32,7 @@
     tasks.push task('gh-nojekyll').copy('./src/.nojekyll').dest('./build')
     tasks.push task('js-copy').copy('./static/*.js').dest('./build')
     tasks.push task('css-copy').copy('./static/*.css').dest('./build')
+    tasks.push task('favicon-copy').copy('./static/images/favicon.ico').dest('./build')
 
 Основное приложение
 ------------------------------
